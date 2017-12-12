@@ -19,9 +19,71 @@
 |    temp
 */
 
-body{
-	background-color: #212121;
-	h1{
-		color: #dedede;
-	}
+$color-white:#FFF;
+$color-black:#212121;
+
+html
+{
+  line-height: 1.15;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.box_main
+{
+  height: 1050px;
+  width: 100%;
+  background-size: cover;
+  background-image: url("http://tremendouswallpapers.com/wp-content/uploads/2014/12/Diesel-Train-In-Winter-Wallpaper-Picture.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box_titles
+{
+  font-size: 20px;
+  text-align: center;
+  color: $color-white;
+  text-shadow: 0 1px 4px rgba(48,50,58,.6);
+  margin: 1em 0 0;
+}
+
+/*pour l'instant ces .text sont inutiles, mais je les réserve pour mieux gérer le titre*/
+.text_title
+{
+
+}
+
+.text_subtitle
+{
+
+}
+
+.box_with_two_boxes
+{
+  width: 940px;
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+}
+
+.box_main_left
+{
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  padding: 24px 40px;
+  background-color: $color-white;
+  border-radius: .3125em;
+  vertical-align: top;
+}
+
+.box_main_right
+{
+  display: block;
+  width: 48.82117%;
+  padding: 24px 40px;
+  background-color: $color-white;
+  border-radius: .3125em;
+  vertical-align: top;
 }
