@@ -1,7 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
-var pump = require('pump');
 var $ = require('gulp-load-plugins')();
 var browserSync = require('browser-sync').create();
 var reload = browserSync.reload;
@@ -18,14 +17,11 @@ gulp.task('sass', function() {
     .pipe(browserSync.stream());
 });
 
-gulp.task('uglify', function (cb) {
-  pump([
-        gulp.src('assets/js/app.js'),
-        uglify(),
-        gulp.dest('public/js/')
-    ],
-    cb
-  ).pipe(browserSync.stream());
+gulp.task('uglify', function () {
+    gulp.src('assets/js/app.js')
+    uglify()
+    gulp.dest('public/js/')
+        .pipe(browserSync.stream());
 });
 
 
