@@ -10,7 +10,6 @@
  */
 /* FONT PATH
  * -------------------------- */
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700");
 @font-face {
   font-family: 'FontAwesome';
   src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
@@ -2338,50 +2337,248 @@
 |
 | components
 |
-**/
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
 /**
 |    temp
 */
+body {
+  margin-left: 0 !important;
+  margin-top: 0 !important; }
+
+.train2 {
+  background-size: 95px auto;
+  width: 105px;
+  display: block;
+  float: left;
+  white-space: nowrap;
+  cursor: pointer;
+  transform-origin: left;
+  padding: 20px 50px; }
+
+.header {
+  width: 100%;
+  background: #233D5D; }
+  .header .header1 {
+    width: 90%;
+    height: 100%; }
+
+.header2 {
+  height: 20%;
+  width: 100%;
+  margin-left: 350px;
+  margin-right: 0;
+  background: #233D5D; }
+
+.bar2 {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-flow: nowrap;
+  width: 50%;
+  height: 10%;
+  background: #233D5D;
+  margin: auto;
+  justify-content: space-around; }
+
+button {
+  outline: 0;
+  border-radius: .3125em;
+  border: 1px solid #01C3A7;
+  color: white;
+  cursor: pointer;
+  background-color: #01C3A7;
+  background-image: none;
+  padding: 8px 20px;
+  line-height: 13px;
+  font-size: 13px;
+  font-weight: 400; }
+
+button:hover {
+  background-color: #01AA91; }
+
+button:active {
+  background-color: #01AA91;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px); }
+
+a {
+  color: white;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  font-family: sans-serif;
+  text-align: center;
+  text-indent: 0;
+  line-height: 30px;
+  text-transform: uppercase; }
+
+img {
+  border: 0 solid black; }
+
+img:hover {
+  border-color: #FFF;
+  box-shadow: 0 0 0 4px #21314D; }
+
 html {
   line-height: 1.15;
   font-family: 'Source Sans Pro', sans-serif; }
 
 .box_main {
-  height: 1050px;
+  height: 700px;
   width: 100%;
-  background-size: cover;
-  background-image: url("http://tremendouswallpapers.com/wp-content/uploads/2014/12/Diesel-Train-In-Winter-Wallpaper-Picture.jpg");
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
-
-.box_titles {
-  font-size: 20px;
-  text-align: center;
-  color: #FFF;
-  text-shadow: 0 1px 4px rgba(48, 50, 58, 0.6);
-  margin: 1em 0 0; }
-
-/*pour l'instant ces .text sont inutiles, mais je les réserve pour mieux gérer le titre*/
-.box_with_two_boxes {
-  width: 940px;
-  display: flex;
-  margin: auto;
-  flex-direction: row; }
-
-.box_main_left {
-  display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%;
-  padding: 24px 40px;
-  background-color: #FFF;
-  border-radius: .3125em;
-  vertical-align: top; }
-
-.box_main_right {
-  display: block;
-  width: 48.82117%;
-  padding: 24px 40px;
-  background-color: #FFF;
-  border-radius: .3125em;
-  vertical-align: top; }
+  .box_main .main_img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url("http://tremendouswallpapers.com/wp-content/uploads/2014/12/Diesel-Train-In-Winter-Wallpaper-Picture.jpg"); }
+  .box_main .box_titles {
+    font-size: 20px;
+    text-align: center;
+    color: #FFF;
+    text-shadow: 0 1px 4px rgba(48, 50, 58, 0.6);
+    margin: 1em 0 0;
+    /*pour l'instant ces .text sont inutiles, mais je les réserve pour mieux gérer le titre*/ }
+  .box_main .box_with_two_boxes {
+    width: 940px;
+    display: flex;
+    margin: auto;
+    flex-direction: row; }
+    .box_main .box_with_two_boxes .box_left {
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      padding: 24px 40px;
+      background-color: #FFF;
+      border-radius: .3125em;
+      vertical-align: top; }
+    .box_main .box_with_two_boxes .box_right {
+      width: 48.82117%;
+      padding: 0 0 100;
+      background-color: #FFF;
+      border-radius: .3125em;
+      vertical-align: top;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .box_main .box_with_two_boxes .box_right .title {
+        background-color: #233D5D;
+        width: 100%;
+        height: 70px;
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 0;
+        padding-bottom: 18px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 18px;
+        vertical-align: top;
+        display: block;
+        box-sizing: border-box;
+        line-height: 5.15;
+        align-self: flex-start;
+        border-radius: .3125em .3125em 0 0; }
+        .box_main .box_with_two_boxes .box_right .title div {
+          height: 100%;
+          width: 100%;
+          -webkit-box-align: center;
+          -moz-box-align: center;
+          -webkit-align-items: center;
+          -ms-flex-align: center;
+          align-items: center;
+          text-align: center;
+          display: inline-block;
+          vertical-align: middle;
+          line-height: normal; }
+          .box_main .box_with_two_boxes .box_right .title div h3 {
+            margin-top: -20px;
+            margin-left: -100px;
+            font-size: 22px;
+            font-weight: 600;
+            color: #FFF;
+            text-align: center; }
+      .box_main .box_with_two_boxes .box_right .content {
+        padding: 25px 40px; }
+        .box_main .box_with_two_boxes .box_right .content ul {
+          list-style: none;
+          height: 255px;
+          display: table;
+          padding: 0; }
+          .box_main .box_with_two_boxes .box_right .content ul li {
+            display: table-row; }
+            .box_main .box_with_two_boxes .box_right .content ul li .icon_price {
+              background-image: url(https://assets.trainline.eu/assets/images/open-home/icons/icon-tag-white-db66a5509c672b244e93ffbadd28b873.svg); }
+            .box_main .box_with_two_boxes .box_right .content ul li .icon_cards {
+              background-image: url(https://assets.trainline.eu/assets/images/open-home/icons/icon-loyalty-card-white-b8fbb92eff5da55d89f515dc5e2b4031.svg); }
+            .box_main .box_with_two_boxes .box_right .content ul li .icon_payment {
+              background-image: url(https://assets.trainline.eu/assets/images/open-home/icons/icon-payment-white-13f3f68e4a260d165dd0bffc1514a98a.svg); }
+            .box_main .box_with_two_boxes .box_right .content ul li span {
+              float: left;
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              background: center no-repeat #21314D;
+              margin-top: 3px; }
+            .box_main .box_with_two_boxes .box_right .content ul li div {
+              padding-left: 60px;
+              font-size: 17px;
+              line-height: 1.4em;
+              color: #323E42; }
+              .box_main .box_with_two_boxes .box_right .content ul li div b {
+                color: #01C3A7;
+                font-weight: 600; }
+        .box_main .box_with_two_boxes .box_right .content .hr {
+          display: -webkit-box;
+          display: -moz-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -moz-box-align: center;
+          -webkit-align-items: center;
+          -ms-flex-align: center;
+          align-items: center;
+          margin: 1em 0;
+          text-align: center;
+          color: #8C9DA1;
+          font-size: 14px;
+          text-transform: uppercase; }
+        .box_main .box_with_two_boxes .box_right .content .hr::before, .box_main .box_with_two_boxes .box_right .content .hr::after {
+          content: '';
+          -webkit-box-flex: 1;
+          -moz-box-flex: 1;
+          -webkit-flex: 1;
+          -ms-flex: 1;
+          flex: 1;
+          margin: 0 .25em;
+          border-bottom: 1px solid #8C9DA1; }
+        .box_main .box_with_two_boxes .box_right .content .carrier_4_items {
+          display: table;
+          table-layout: fixed;
+          width: 100%;
+          margin-top: 0;
+          margin-right: auto;
+          margin-left: auto;
+          margin-bottom: 0; }
+          .box_main .box_with_two_boxes .box_right .content .carrier_4_items .carrier {
+            display: table-cell;
+            text-align: center; }
+            .box_main .box_with_two_boxes .box_right .content .carrier_4_items .carrier .carrier1 {
+              box-sizing: border-box;
+              text-align: center; }
+              .box_main .box_with_two_boxes .box_right .content .carrier_4_items .carrier .carrier1 div {
+                height: 25px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center center; }
+              .box_main .box_with_two_boxes .box_right .content .carrier_4_items .carrier .carrier1 .logo_sncf {
+                background-image: url(https://assets.trainline.eu/assets/images/carriers/color/sncf-7f078a98a8f3e3c134fb32422e02c9f0.svg); }
+              .box_main .box_with_two_boxes .box_right .content .carrier_4_items .carrier .carrier1 .logo_ouigo {
+                background-image: url(https://assets.trainline.eu/assets/images/carriers/color/ouigo-dfab4f2b8c8416c80d11690c24338af2.svg); }
+              .box_main .box_with_two_boxes .box_right .content .carrier_4_items .carrier .carrier1 .logo_thalys {
+                background-image: url(https://assets.trainline.eu/assets/images/carriers/color/thalys-2daeca7f1afeed37208c9e86ff8c9dbc.svg); }
+              .box_main .box_with_two_boxes .box_right .content .carrier_4_items .carrier .carrier1 .logo_eurostar {
+                background-image: url(https://assets.trainline.eu/assets/images/carriers/color/eurostar-dc26edd3437c6e8a0891bf7326b40fde.png); }
