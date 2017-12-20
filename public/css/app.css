@@ -2426,13 +2426,11 @@ html {
   height: 700px;
   width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  justify-content: space-between; }
-  .box_main .main_img {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-image: url("http://tremendouswallpapers.com/wp-content/uploads/2014/12/Diesel-Train-In-Winter-Wallpaper-Picture.jpg"); }
+  background-size: cover;
+  background-image: url("http://tremendouswallpapers.com/wp-content/uploads/2014/12/Diesel-Train-In-Winter-Wallpaper-Picture.jpg"); }
   .box_main .box_titles {
     font-size: 20px;
     text-align: center;
@@ -2443,17 +2441,9 @@ html {
   .box_main .box_with_two_boxes {
     width: 940px;
     display: flex;
-    margin: auto;
-    flex-direction: row; }
+    align-items: center;
+    justify-content: center; }
     .box_main .box_with_two_boxes .box_left {
-      display: block;
-      margin-right: 2.35765%;
-      width: 48.82117%;
-      padding: 24px 40px;
-      background-color: #FFF;
-      border-radius: .3125em;
-      vertical-align: top; }
-    .box_main .box_with_two_boxes .box_right {
       width: 48.82117%;
       padding: 0 0 100;
       background-color: #FFF;
@@ -2462,7 +2452,55 @@ html {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center; }
+      justify-content: center;
+      margin: 5px; }
+      .box_main .box_with_two_boxes .box_left .title {
+        border-radius: .3125em .3125em 0 0;
+        text-rendering: optimizeLegibility;
+        font-size: 20px;
+        margin: 0 0 15px; }
+      .box_main .box_with_two_boxes .box_left .content {
+        padding: 25px 40px;
+        height: 255px;
+        margin-left: -25px; }
+        .box_main .box_with_two_boxes .box_left .content .search_section_1 {
+          margin-bottom: 29px; }
+        .box_main .box_with_two_boxes .box_left .content .search_section {
+          position: relative;
+          box-sizing: border-box; }
+          .box_main .box_with_two_boxes .box_left .content .search_section .search_field .input_travel {
+            outline: 0;
+            border-radius: .3125em;
+            border: 1px solid #01C3A7;
+            background-color: #F6F7FA;
+            box-shadow: inset 0 1px 0 0 #EAEBEE;
+            opacity: .5;
+            width: 100%;
+            background-color: #FFF;
+            box-shadow: none;
+            padding: 11px 0 11px 35px;
+            width: 100%;
+            line-height: 20px;
+            background-repeat: no-repeat;
+            background-position: 11px center; }
+          .box_main .box_with_two_boxes .box_left .content .search_section .search_field .departure {
+            background-image: url(https://assets.trainline.eu/assets/images/from-793fd74a5d09b687beb849fab15ae7a6.svg); }
+          .box_main .box_with_two_boxes .box_left .content .search_section .search_field .arrival {
+            background-image: url(https://assets.trainline.eu/assets/images/to-3c0a8d746fa1464b9bd1f7be13b6b127.svg); }
+          .box_main .box_with_two_boxes .box_left .content .search_section .search_field .aller_date {
+            background-image: url(https://assets.trainline.eu/assets/images/calendar-outward-021f4ddf731281274d7726a793a08a79.svg); }
+          .box_main .box_with_two_boxes .box_left .content .search_section .search_field .retour_date {
+            background-image: url(https://assets.trainline.eu/assets/images/calendar-inward-5d0aa59596158d156fcfa9e846b93e52.svg); }
+    .box_main .box_with_two_boxes .box_right {
+      width: 48.82117%;
+      padding: 0 0 100;
+      background-color: #FFF;
+      border-radius: .3125em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-left: 5px; }
       .box_main .box_with_two_boxes .box_right .title {
         background-color: #233D5D;
         width: 100%;
@@ -2582,3 +2620,8 @@ html {
                 background-image: url(https://assets.trainline.eu/assets/images/carriers/color/thalys-2daeca7f1afeed37208c9e86ff8c9dbc.svg); }
               .box_main .box_with_two_boxes .box_right .content .carrier_4_items .carrier .carrier1 .logo_eurostar {
                 background-image: url(https://assets.trainline.eu/assets/images/carriers/color/eurostar-dc26edd3437c6e8a0891bf7326b40fde.png); }
+
+.right_departure {
+  height: 100px;
+  width: 100px;
+  background-color: #323E42; }
