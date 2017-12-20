@@ -8,14 +8,16 @@ var btn = document.getElementById("show");
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
-btn.onclick = function () {
+btn.addEventListener('click', function () {
   modal.style.display = "block";
-}
+})
+
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function () {
+span.addEventListener('click', function () {
   modal.style.display = "none";
-}
+})
+
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
@@ -23,8 +25,10 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 } 
+ 
 //quand je clique sur .departure, ça montre .right_departure
 $(document).ready(function(){
+  modal.style.display = "none";
 
 	$('.departure').click(function() {
 		$(".right_departure").hide();

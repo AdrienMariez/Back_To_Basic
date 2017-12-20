@@ -14,8 +14,8 @@
             </div>
             <div class="header2">
                 <div class="bar2">
-                    <p id="show"><button type="button">CRÊER UN COMPTE</button></p>
-                    <p class="button2"><button type="button">SE CONNECTER</button></p>
+                    <p id="button1"><button type="button">CRÊER UN COMPTE</button></p>
+                    <p id="show"><button type="button">SE CONNECTER</button></p>
                     <p class="aide"><a href="">AIDE</a></p>
                     <p><a href=""><img src="euro.png"/></a></p>
                     <p><a href=""><img src="eur.png" alt="euro"/></a></p>
@@ -28,7 +28,13 @@
         <!-- Modal content -->
         <div class="lizmodal-content">
             <span class="close">&times;</span>
-            <p>Some text in the Modal..</p>
+            <form id="loginform" name="loginform" method="post" action="index.html">
+                <input type="text" name="username" id="username" class="txtfield" tabindex="1">
+                <input type="password" name="password" id="password" class="txtfield" tabindex="2">
+                <div class="center">
+                    <input type="submit" name="loginbtn" id="loginbtn" class="flatbtn-blu hidemodal" value="Log In" tabindex="3">
+                </div>
+            </form>
         </div>
     </div>
 		<!---->
