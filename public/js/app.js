@@ -1,1 +1,1 @@
-!function(){console.log("hello world !");console.log("hello michel")}();
+var modal=document.getElementById("lizModal"),btn=document.getElementById("show"),span=document.getElementsByClassName("close")[0];btn.onclick=function(){modal.style.display="block"},span.onclick=function(){modal.style.display="none"},window.onclick=function(n){n.target==modal&&(modal.style.display="none")};
